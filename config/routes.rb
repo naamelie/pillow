@@ -1,13 +1,31 @@
 Rails.application.routes.draw do
+  get 'resa/recap'
+
+  get 'resa/valid'
+
+  get 'resa/error'
+
+  get 'user/index'
+
+  get 'user/host'
+
+  get 'bien/index'
+
+  get 'search/index'
+
+  get 'connect/connexion'
+
+  get 'connect/inscription'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-  
+
   resources  :users
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
