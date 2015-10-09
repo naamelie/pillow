@@ -2,6 +2,6 @@ class ConnectController < ApplicationController
   def connexion
   end
 
-  def inscription
+  def inscription 
   end
 end
