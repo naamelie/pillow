@@ -1,0 +1,54 @@
+<h1>Profile</h1>
+<p>Find me in app/views/user/host.html.erb</p>
+<div class="content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="page-head-line"> SIGN UP </h1>
+      </div>
+    </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+               SIGN UP
+            </div>
+            <div class="panel-body">
+            <div class="fields">
+              <%= form_for(@user) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :surname %>
+    <%= f.text_field :surname %>
+    <%= f.label :date_of_birth %>
+    <%= f.text_field :date_birth %>
+    <%= f.label :gender %>
+    <%= f.text_field :gender%>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+    <%= f.label :adress %>
+    <%= f.text_field :adress %>
+    <%= f.label :zip_code %>
+    <%= f.text_field :zip_code %>
+    <%= f.label :town %>
+    <%= f.text_field :town %>
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+    <%= f.label :password %>
+    <%= f.text_field :encrypted_password%>
+    <%= f.label :description%>
+    <%= f.text_field :description %>
+    <%= f.label :langage%>
+    <%= f.text_field :langage%>
+    <%= f.label :photos%>
+    <%= f.text_field :photos%>
+
+    <%= submit_tag 'Submit'%>
+
+  </div>
+  <% end %>
+</div>
+</div>
+                    </div>
